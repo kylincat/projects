@@ -1,1 +1,128 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kylincat's Projects</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #F5F5D5;
+        }
+        .content {
+            margin: 130px auto 0;
+            background-color: #fff;
+            width: 25%;
+            border-left: 3px solid #fff;
+            border-right: 3px solid #fff;
+            border-top: 1px #fff solid;
+            border-bottom: 1px #fff solid;
+        }
+        .one {
+            
+            padding: 5px 10px;
+        }
+        .two {
+            
+            text-align: center;
+        }
+        .three {
+            
+            padding: 5px 10px;
+        }
+        ul>li {
+            display: block;
+            width: 100%;
+            height: 50px;
+            /* height: 140px; */
+            background-color: #eee;
+            margin: 3px 0;
+            line-height: 50px;
+            cursor: pointer;
+            list-style: none;
+            overflow: hidden;
+            transition: height 300ms linear;
+        }
+        li span {
+            margin-left: 10px;
+        }
+        a {text-decoration: none; margin-left: 15px; color: #000; }
+        a:hover {text-decoration: underline;}
+
+        .one,
+        .two,
+        .three {display: block; width: 100%; background-color: #fff;}
+
+        .one div,
+        .two div,
+        .three div {
+            height: 40px;
+            line-height: 40px;
+        }
+        .show1 {
+            height: 140px;
+            transition: height 500ms cubic-bezier(0.250, 0.250, 0.195, 1.510);
+        }
+        .show2 {
+            height: 315px;
+            transition: height 500ms cubic-bezier(0.250, 0.250, 0.195, 1.510);
+        }
+        .show3 {
+            height: 300px;
+            transition: height 500ms cubic-bezier(0.250, 0.250, 0.195, 1.510);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <ul>
+            <li>
+                <span>资源回收项目</span>
+                <div class="one">
+                    <div>1)<a href="https://kylincat.github.io/recycling/page1.html">首页</a></div>
+                    <div>2)<a href="https://kylincat.github.io/recycling/更多-回收员.html">回收员</a></div>
+                </div>
+            </li>
+            <li>
+                <span>快递小程序</span>
+                <div class="two">
+                    <img src="img/小程序码1.jpg" alt="">
+                </div>
+            </li>
+            <li>
+                <span>其它</span>
+                <div class="three">
+                    <div>1)<a href="https://kylincat.github.io/jquery-effects/轮播图(显示与隐藏)/index.html">显示与隐藏实现轮播</a></div>
+                    <div>2)<a href="https://kylincat.github.io/jquery-effects/轮播图（无缝轮播）/index.html">左右无缝轮播</a></div>
+                    <div>3)<a href="https://kylincat.github.io/H5-stuff/Tmall/grid.html">模仿天猫商城品牌墙</a></div>
+                    <div>4)<a href="https://kylincat.github.io/H5-stuff/H5-my-resume/index.html">H5网站</a></div>
+                    <div>5)<a href="https://kylincat.github.io/H5-stuff/360view/index.html">360°全景图</a></div>
+                    <div>6)<a href="https://codepen.io/kylincat/full/MqYGWd/">CSS3翻书效果</a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<script>
+    var li = document.querySelectorAll("ul>li");
+    var one = document.querySelector(".one");
+    var two = document.querySelector(".two");
+    var three = document.querySelector(".three");
+
+    li[0].addEventListener('click', function() {
+        li[0].classList.toggle("show1");
+    })
+    li[1].onclick = function() {
+        li[1].classList.toggle("show2");
+    }
+    li[2].onclick = function() {
+        li[2].classList.toggle("show3");
+    }
+    // console.log(li);
+    
+</script>
+</body>
+</html>
