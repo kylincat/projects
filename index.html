@@ -51,24 +51,21 @@
         }
         a {text-decoration: none; margin-left: 15px; color: #000; }
         a:hover {text-decoration: underline;}
-        .one,
-        .two,
-        .three {display: block; width: 100%; background-color: #fff;}
-        .one div,
-        .two div,
-        .three div {
-            height: 40px;
-            line-height: 40px;
-        }
+        .one,.two,.three {display: block; width: 100%; background-color: #fff;}
+        .one div,.two div,.three div {height: 40px;line-height: 40px;}
         .show1 {
             height: 140px;
             transition: height 500ms cubic-bezier(0.250, 0.250, 0.195, 1.510);
         }
         .show2 {
-            height: 315px;
+            height: 100px;
             transition: height 500ms cubic-bezier(0.250, 0.250, 0.195, 1.510);
         }
         .show3 {
+            height: 315px;
+            transition: height 500ms cubic-bezier(0.250, 0.250, 0.195, 1.510);
+        }
+        .show4 {
             height: 340px;
             transition: height 500ms cubic-bezier(0.250, 0.250, 0.195, 1.510);
         }
@@ -85,6 +82,12 @@
                 </div>
             </li>
             <li>
+                <span>Web&nbsp;app</span>
+                <div class="one">
+                    <div>1)<a href="https://kylincat.github.io/vue/onlineTranslator/index.html">线上翻译</a></div>
+                </div>
+            </li>
+            <li>
                 <span>快递小程序</span>
                 <div class="two">
                     <img src="img/小程序码1.jpg" alt="">
@@ -93,14 +96,14 @@
             <li>
                 <span>其它</span>
                 <div class="three">
-                    <div>1)<a href="https://kylincat.github.io/vue/onlineTranslator/index.html">线上翻译</a></div>
+                    <div>1)<a href="https://kylincat.github.io/H5-stuff/Tmall/grid.html">仿天猫商城品牌墙</a></div>
                     <div>2)<a href="https://kylincat.github.io/jquery-effects/轮播图(显示与隐藏)/index.html">显示与隐藏实现轮播</a></div>
                     <div>3)<a href="https://kylincat.github.io/jquery-effects/轮播图(左右无缝轮播)/index.html">左右无缝轮播</a></div>        
                     <div>4)<a href="https://kylincat.github.io/H5-stuff/H5-my-resume/index.html">H5网站</a></div>
                     <div>5)<a href="https://kylincat.github.io/H5-stuff/360view/index.html">360°全景图</a></div>
                     <div>6)<a href="https://codepen.io/kylincat/full/MqYGWd/">CSS3翻书效果</a></div>
                     <div>7)<a href="https://codepen.io/kylincat/full/dqjvmN/">地球环绕太阳</a></div>
-                    <div>8)<a href="https://kylincat.github.io/H5-stuff/Tmall/grid.html">仿天猫商城品牌墙</a></div>
+                    
                 </div>
             </li>
         </ul>
@@ -119,6 +122,9 @@
     }
     li[2].onclick = function() {
         li[2].classList.toggle("show3");
+    }
+    li[3].onclick = function() {
+        li[3].classList.toggle("show4");
     }
     // console.log(li);
     
